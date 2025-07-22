@@ -1,5 +1,5 @@
 # Dockerfile for a vulnerable Python container image
-FROM python:3.10.12-slim
+FROM python:3.12-slim
 
 # Copy a simple Python application (optional)
 COPY app.py /app/app.py
